@@ -1,0 +1,24 @@
+{
+  "name": "helpmate",
+  "version": "0.0.1",
+  "description": "Helpmate - A collection of various helper functions for Node.js",
+  "main": "helpmate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webextensions/helpmate.git"
+  },
+  "keywords": [
+    "helpmate",
+    "helper",
+    "functions"
+  ],
+  "author": "webextensions.org <webextensions.org@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webextensions/helpmate/issues"
+  },
+  "homepage": "https://github.com/webextensions/helpmate"
+}
