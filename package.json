@@ -1,6 +1,6 @@
 {
   "name": "helpmate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Helpmate - A collection of various helper functions for Node.js",
   "main": "lib/helpmate.js",
   "scripts": {
