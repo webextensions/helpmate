@@ -1,14 +1,16 @@
+var fs = require('fs'),
+    path = require('path');
+
 var expect = require('chai').expect,
     assert = require('chai').assert,
-    helpmate = require('../helpmate.js'),
-    fs = require('fs'),
-    path = require('path'),
     del = require('del');
+
+var helpmate = require('../lib/helpmate.js');
 
 describe('helpmate', function () {
     describe('helpmate.fs', function () {
         describe('helpmate.fs.updateFileIfRequired', function () {
-            var filePath = path.normalize(__dirname + '/temp.txt');
+            var filePath = path.normalize(__dirname + '/data/temp.txt');
             before(function (done) {
                 fs.open(filePath, 'r', function (err, exists) {
                     var fileExists = true;
@@ -30,9 +32,8 @@ describe('helpmate', function () {
                         callback: function (err, status) {
                             var dataFromNewFile = fs.readFileSync(filePath, 'utf8');
                             expect(dataFromNewFile).to.equal(data);
-                            del(filePath, function (err, paths) {
-                                done();
-                            });
+                            del.sync([filePath]);
+                            done();
                         }
                     }
                 );
@@ -50,9 +51,8 @@ describe('helpmate', function () {
 
                             var dataFromNewFile = fs.readFileSync(filePath, 'utf8');
                             expect(dataFromNewFile).to.equal(newData);
-                            del(filePath, function (err, paths) {
-                                done();
-                            });
+                            del.sync([filePath]);
+                            done();
                         }
                     }
                 );
