@@ -2,7 +2,7 @@
   "name": "helpmate",
   "version": "0.0.3",
   "description": "Helpmate - A collection of various helper functions for Node.js",
-  "main": "helpmate.js",
+  "main": "lib/helpmate.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
