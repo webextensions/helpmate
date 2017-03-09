@@ -29,6 +29,7 @@
     "shelljs": "0.7.6"
   },
   "devDependencies": {
+    "async": "2.1.5",
     "chai": "3.5.0",
     "jsdoc": "3.4.3",
     "mocha": "3.2.0"
