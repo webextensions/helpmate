@@ -5,12 +5,12 @@ Helpmate - A collection of various helper functions for Node.js
 
 ```js
 // Recommended:
-import { retryNTimesWithDelay } from 'helpmate/dist/tasks/retryNTimesWithDelay.js';
-const { retryNTimesWithDelay } = require('helpmate/dist/tasks/retryNTimesWithDelay.cjs');
+import { retryNTimesWithDelay } from 'helpmate/dist/misc/retryNTimesWithDelay.js';
+const { retryNTimesWithDelay } = require('helpmate/dist/misc/retryNTimesWithDelay.cjs');
 
 // Grouped:
-import { tasks } from 'helpmate/dist/tasks/index.js';
-const { tasks } = require('helpmate/dist/tasks/index.cjs');
+import { misc } from 'helpmate/dist/misc/index.js';
+const { misc } = require('helpmate/dist/misc/index.cjs');
 
 // All-in-one:
 import { helpmate } from 'helpmate';
