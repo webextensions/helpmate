@@ -1,6 +1,10 @@
 package-lock.json
 
+# Generated files
 dist/*
+
+# Output files for `$ npm pack` command
+helpmate-*.tgz
 
 # Logs
 logs
