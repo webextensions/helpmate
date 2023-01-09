@@ -1,6 +1,7 @@
-var sortObjectByProperty = function (property) {
+const sortArrayOfObjectsByProperty = function (property) {
     return function (obA, obB) {
-        var a = obA[property],
+        const
+            a = obA[property],
             b = obB[property];
         if (a > b) {
             return 1;
@@ -11,4 +12,6 @@ var sortObjectByProperty = function (property) {
     };
 };
 
-module.exports = { sortObjectByProperty: sortObjectByProperty };
+export {
+    sortArrayOfObjectsByProperty
+};

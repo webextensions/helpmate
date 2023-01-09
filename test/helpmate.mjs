@@ -1,16 +1,17 @@
-var fs = require('fs'),
-    path = require('path');
+import fs from 'node:fs';
+import path, { dirname } from 'node:path';
 
-var expect = require('chai').expect,
-    assert = require('chai').assert,
-    del = require('del');
+import { expect, assert } from 'chai';
+import { deleteAsync } from 'del';
 
-var helpmate = require('../lib/helpmate.js');
+import { helpmate } from '../helpmate/index.js';
+
+const moduleDir = dirname(import.meta.url).replace('file://', '');
 
 describe('helpmate', function () {
     describe('helpmate.fs', function () {
         describe('helpmate.fs.updateFileIfRequired', function () {
-            var filePath = path.normalize(__dirname + '/data/temp.txt');
+            var filePath = path.normalize(moduleDir + '/data/temp.txt');
             before(function (done) {
                 fs.open(filePath, 'r', function (err, exists) {
                     var fileExists = true;
@@ -32,8 +33,10 @@ describe('helpmate', function () {
                         callback: function (err, status) {
                             var dataFromNewFile = fs.readFileSync(filePath, 'utf8');
                             expect(dataFromNewFile).to.equal(data);
-                            del.sync([filePath]);
-                            done();
+                            (async () => {
+                                await deleteAsync([filePath]);
+                                done();
+                            })();
                         }
                     }
                 );
@@ -51,8 +54,10 @@ describe('helpmate', function () {
 
                             var dataFromNewFile = fs.readFileSync(filePath, 'utf8');
                             expect(dataFromNewFile).to.equal(newData);
-                            del.sync([filePath]);
-                            done();
+                            (async () => {
+                                await deleteAsync([filePath]);
+                                done();
+                            })();
                         }
                     }
                 );
@@ -60,3 +65,4 @@ describe('helpmate', function () {
         });
     });
 });
+/* */

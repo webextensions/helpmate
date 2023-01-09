@@ -1,0 +1,37 @@
+# helpmate
+Helpmate - A collection of various helper functions for Node.js
+
+## Example Usages
+
+```js
+// Recommended:
+import { retryNTimesWithDelay } from 'helpmate/dist/tasks/retryNTimesWithDelay.js';
+const { retryNTimesWithDelay } = require('helpmate/dist/tasks/retryNTimesWithDelay.cjs');
+
+// Grouped:
+import { tasks } from 'helpmate/dist/tasks/index.js';
+const { tasks } = require('helpmate/dist/tasks/index.cjs');
+
+// All-in-one:
+import { helpmate } from 'helpmate';
+const { helpmate } = require('helpmate');
+```
+
+## List of available `import` / `require`
+
+```js
+// Load with "import" syntax:
+
+{{listOfImports}}
+
+
+// Load with "require" syntax:
+
+{{listOfRequires}}
+```
+
+## List of files
+
+```
+{{listOfFiles}}
+```

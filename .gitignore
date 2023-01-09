@@ -1,5 +1,7 @@
 package-lock.json
 
+dist/*
+
 # Logs
 logs
 *.log

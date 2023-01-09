@@ -1,4 +1,4 @@
-var fs = require('fs');
+import fs from 'node:fs';
 
 /**
  * This callback type is called `requestCallback` and is displayed as a global symbol.
@@ -17,8 +17,9 @@ var fs = require('fs');
  * @param {boolean} options.verbose - To log the messages or not
  * @param {callback} options.callback - The function to be called on completion
  */
-function updateFileIfRequired (options) {
-    var file = options.file,
+function updateFileIfRequired(options) {
+    const
+        file = options.file,
         encoding = options.encoding || 'utf8',
         newData = options.data,
         verbose = options.verbose || false,
@@ -52,4 +53,4 @@ function updateFileIfRequired (options) {
     });
 }
 
-module.exports = updateFileIfRequired;
+export { updateFileIfRequired };

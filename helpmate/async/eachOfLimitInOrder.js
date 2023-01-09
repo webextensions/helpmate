@@ -1,15 +1,15 @@
-var async = require('async');
+import async from 'async';
 
-var sortObjectByProperty = require('../../lib/array/helpmate-array-utils.js').sortObjectByProperty;
+import { sortArrayOfObjectsByProperty } from '../array/sortArrayOfObjectsByProperty.js';
 
-var eachOfLimitInOrder = function (items, concurrency, cb, complete) {
-    var pendingOutputs = [],
+const eachOfLimitInOrder = function (items, concurrency, cb, complete) {
+    let pendingOutputs = [],
         outputDoneUptoIndex = -1,
         anyErrorSoFar = false;
 
-    var flushOutputs = function () {
-        pendingOutputs = pendingOutputs.sort(sortObjectByProperty('index'));
-        var pendingOutput = pendingOutputs[0];
+    const flushOutputs = function () {
+        pendingOutputs = pendingOutputs.sort(sortArrayOfObjectsByProperty('index'));
+        const pendingOutput = pendingOutputs[0];
 
         if (pendingOutput) {
             if (pendingOutput.index === outputDoneUptoIndex + 1) {
@@ -28,16 +28,16 @@ var eachOfLimitInOrder = function (items, concurrency, cb, complete) {
 
     async.eachOfLimit(items, concurrency, function (item, key, _cb) {
         cb(item, key, function (err, cbOrderedOutput) {
-            var callCbAfterFlushOutputs = null;
+            let callCbAfterFlushOutputs = null;
 
             if (err) {
                 anyErrorSoFar = true;
             }
             if (anyErrorSoFar) {
-                pendingOutputs.push({index: key, err: err, cbOrderedOutput: cbOrderedOutput, _cb: _cb});
+                pendingOutputs.push({ index: key, err: err, cbOrderedOutput: cbOrderedOutput, _cb: _cb });
             } else {
                 callCbAfterFlushOutputs = true;
-                pendingOutputs.push({index: key, err: err, cbOrderedOutput: cbOrderedOutput});
+                pendingOutputs.push({ index: key, err: err, cbOrderedOutput: cbOrderedOutput });
             }
             flushOutputs();
 
@@ -50,4 +50,4 @@ var eachOfLimitInOrder = function (items, concurrency, cb, complete) {
     });
 };
 
-module.exports = eachOfLimitInOrder;
+export { eachOfLimitInOrder };
