@@ -28,6 +28,9 @@ import { array } from 'helpmate/dist/array/index.js';
 import { eachOfLimitInOrder } from 'helpmate/dist/async/eachOfLimitInOrder.js';
 import { async } from 'helpmate/dist/async/index.js';
 
+import { getBrowser } from 'helpmate/dist/browser/getBrowser.js';
+import { browser } from 'helpmate/dist/browser/index.js';
+
 import { updateFileIfRequired } from 'helpmate/dist/fs/updateFileIfRequired.js';
 import { fs } from 'helpmate/dist/fs/index.js';
 
@@ -50,6 +53,9 @@ const { array } = require('helpmate/dist/array/index.cjs');
 
 const { eachOfLimitInOrder } = require('helpmate/dist/async/eachOfLimitInOrder.cjs');
 const { async } = require('helpmate/dist/async/index.cjs');
+
+const { getBrowser } = require('helpmate/dist/browser/getBrowser.cjs');
+const { browser } = require('helpmate/dist/browser/index.cjs');
 
 const { updateFileIfRequired } = require('helpmate/dist/fs/updateFileIfRequired.cjs');
 const { fs } = require('helpmate/dist/fs/index.cjs');
@@ -74,6 +80,9 @@ helpmate/array/index.js
 
 helpmate/async/eachOfLimitInOrder.js
 helpmate/async/index.js
+
+helpmate/browser/getBrowser.js
+helpmate/browser/index.js
 
 helpmate/fs/updateFileIfRequired.js
 helpmate/fs/index.js
