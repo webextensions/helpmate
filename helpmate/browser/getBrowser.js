@@ -165,7 +165,7 @@ const getBrowser = (function () {
     let sourceOfConfidence = 'not-available';
     let name = 'not-available';
     let flagChromiumBased = null;
-    let encounteredError = false;
+    let encounteredError = null;
 
     return async function () {
         if (name === 'not-available') {
