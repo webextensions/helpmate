@@ -37,6 +37,7 @@ import { fs } from 'helpmate/dist/fs/index.js';
 import { noteDown } from 'helpmate/dist/logger/noteDown.js';
 import { logger } from 'helpmate/dist/logger/index.js';
 
+import { copyToClipboard } from 'helpmate/dist/misc/copyToClipboard.js';
 import { humanReadableByteSize } from 'helpmate/dist/misc/humanReadableByteSize.js';
 import { retryNTimesWithDelay } from 'helpmate/dist/misc/retryNTimesWithDelay.js';
 import { timeout } from 'helpmate/dist/misc/timeout.js';
@@ -63,6 +64,7 @@ const { fs } = require('helpmate/dist/fs/index.cjs');
 const { noteDown } = require('helpmate/dist/logger/noteDown.cjs');
 const { logger } = require('helpmate/dist/logger/index.cjs');
 
+const { copyToClipboard } = require('helpmate/dist/misc/copyToClipboard.cjs');
 const { humanReadableByteSize } = require('helpmate/dist/misc/humanReadableByteSize.cjs');
 const { retryNTimesWithDelay } = require('helpmate/dist/misc/retryNTimesWithDelay.cjs');
 const { timeout } = require('helpmate/dist/misc/timeout.cjs');
@@ -90,6 +92,7 @@ helpmate/fs/index.js
 helpmate/logger/noteDown.js
 helpmate/logger/index.js
 
+helpmate/misc/copyToClipboard.js
 helpmate/misc/humanReadableByteSize.js
 helpmate/misc/retryNTimesWithDelay.js
 helpmate/misc/timeout.js
