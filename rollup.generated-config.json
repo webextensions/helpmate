@@ -1,6 +1,6 @@
 [
     {
-        "input": "helpmate/array/sortArrayOfObjectsByProperty.js",
+        "input": "src/array/sortArrayOfObjectsByProperty.js",
         "output": [
             {
                 "exports": "named",
@@ -37,7 +37,7 @@
         ]
     },
     {
-        "input": "helpmate/array/index.js",
+        "input": "src/array/index.js",
         "output": [
             {
                 "exports": "named",
@@ -74,7 +74,7 @@
         ]
     },
     {
-        "input": "helpmate/async/eachOfLimitInOrder.js",
+        "input": "src/async/eachOfLimitInOrder.js",
         "output": [
             {
                 "exports": "named",
@@ -111,7 +111,7 @@
         ]
     },
     {
-        "input": "helpmate/async/index.js",
+        "input": "src/async/index.js",
         "output": [
             {
                 "exports": "named",
@@ -148,7 +148,7 @@
         ]
     },
     {
-        "input": "helpmate/browser/getBrowser.js",
+        "input": "src/browser/getBrowser.js",
         "output": [
             {
                 "exports": "named",
@@ -185,7 +185,7 @@
         ]
     },
     {
-        "input": "helpmate/browser/index.js",
+        "input": "src/browser/index.js",
         "output": [
             {
                 "exports": "named",
@@ -222,7 +222,7 @@
         ]
     },
     {
-        "input": "helpmate/fs/updateFileIfRequired.js",
+        "input": "src/fs/updateFileIfRequired.js",
         "output": [
             {
                 "exports": "named",
@@ -259,7 +259,7 @@
         ]
     },
     {
-        "input": "helpmate/fs/index.js",
+        "input": "src/fs/index.js",
         "output": [
             {
                 "exports": "named",
@@ -296,7 +296,7 @@
         ]
     },
     {
-        "input": "helpmate/logger/noteDown.js",
+        "input": "src/logger/noteDown.js",
         "output": [
             {
                 "exports": "named",
@@ -333,7 +333,7 @@
         ]
     },
     {
-        "input": "helpmate/logger/index.js",
+        "input": "src/logger/index.js",
         "output": [
             {
                 "exports": "named",
@@ -370,7 +370,7 @@
         ]
     },
     {
-        "input": "helpmate/misc/copyToClipboard.js",
+        "input": "src/misc/copyToClipboard.js",
         "output": [
             {
                 "exports": "named",
@@ -407,7 +407,7 @@
         ]
     },
     {
-        "input": "helpmate/misc/humanReadableByteSize.js",
+        "input": "src/misc/humanReadableByteSize.js",
         "output": [
             {
                 "exports": "named",
@@ -444,7 +444,7 @@
         ]
     },
     {
-        "input": "helpmate/misc/retryNTimesWithDelay.js",
+        "input": "src/misc/retryNTimesWithDelay.js",
         "output": [
             {
                 "exports": "named",
@@ -481,7 +481,7 @@
         ]
     },
     {
-        "input": "helpmate/misc/timeout.js",
+        "input": "src/misc/timeout.js",
         "output": [
             {
                 "exports": "named",
@@ -518,7 +518,7 @@
         ]
     },
     {
-        "input": "helpmate/misc/index.js",
+        "input": "src/misc/index.js",
         "output": [
             {
                 "exports": "named",
@@ -555,7 +555,7 @@
         ]
     },
     {
-        "input": "helpmate/index.js",
+        "input": "src/index.js",
         "output": [
             {
                 "exports": "named",

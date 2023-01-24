@@ -77,26 +77,26 @@ const { helpmate } = require('helpmate');
 ## List of files
 
 ```
-helpmate/array/sortArrayOfObjectsByProperty.js
-helpmate/array/index.js
+src/array/sortArrayOfObjectsByProperty.js
+src/array/index.js
 
-helpmate/async/eachOfLimitInOrder.js
-helpmate/async/index.js
+src/async/eachOfLimitInOrder.js
+src/async/index.js
 
-helpmate/browser/getBrowser.js
-helpmate/browser/index.js
+src/browser/getBrowser.js
+src/browser/index.js
 
-helpmate/fs/updateFileIfRequired.js
-helpmate/fs/index.js
+src/fs/updateFileIfRequired.js
+src/fs/index.js
 
-helpmate/logger/noteDown.js
-helpmate/logger/index.js
+src/logger/noteDown.js
+src/logger/index.js
 
-helpmate/misc/copyToClipboard.js
-helpmate/misc/humanReadableByteSize.js
-helpmate/misc/retryNTimesWithDelay.js
-helpmate/misc/timeout.js
-helpmate/misc/index.js
+src/misc/copyToClipboard.js
+src/misc/humanReadableByteSize.js
+src/misc/retryNTimesWithDelay.js
+src/misc/timeout.js
+src/misc/index.js
 
-helpmate/index.js
+src/index.js
 ```

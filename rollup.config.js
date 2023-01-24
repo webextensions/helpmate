@@ -57,12 +57,12 @@ const output = {
 // Target output
 const rollupConfig = [
     {
-        input: 'helpmate/index.js',
+        input: 'src/index.js',
         output: { ...output, format: 'cjs', file: 'dist/index.cjs' },
         plugins
     },
     {
-        input: 'helpmate/index.js',
+        input: 'src/index.js',
         output: { ...output, format: 'esm', file: 'dist/index.js' },
         plugins
     },
@@ -70,10 +70,10 @@ const rollupConfig = [
 ];
 */
 
-// Read the list of files and directories recursively in the "helpmate" directory
+// Read the list of files and directories recursively in the "src" directory
 // and create a rollup config for each one.
 
-const helpmateDir = path.resolve('./helpmate');
+const helpmateDir = path.resolve('./src');
 const helpmateDirLength = helpmateDir.length;
 
 const getFiles = async (dir) => {
@@ -207,7 +207,7 @@ const rollupConfig = files.map((file) => {
     }
 
     const source = file;
-    const input = `helpmate/${source}.js`;
+    const input = `src/${source}.js`;
 
     let namedExport = source.split('/').pop();
     if (namedExport === 'index') {
@@ -218,7 +218,7 @@ const rollupConfig = files.map((file) => {
     }
     listOfImports.push(`import { ${namedExport} } from 'helpmate/dist/${source}.js';`);
     listOfRequires.push(`const { ${namedExport} } = require('helpmate/dist/${source}.cjs');`);
-    listOfFiles.push(`helpmate/${source}.js`);
+    listOfFiles.push(`src/${source}.js`);
 
     return {
         input,
@@ -237,7 +237,7 @@ console.log('List of files being bundled:');
 // console.log(
 //     '    ' +
 //     files.map((file) => {
-//         return `helpmate/${file}.js`;
+//         return `src/${file}.js`;
 //     }).join('\n    ')
 // );
 console.log('    ' + listOfFiles.join('\n    '));
@@ -261,7 +261,7 @@ const readme = (
         .replace('{{listOfRequires}}', listOfRequires.join('\n'))
         .replace('{{listOfFiles}}', listOfFiles.join('\n'))
         // .replace('{{listOfFiles}}', files.map((file) => {
-        //     return `helpmate/${file}.js`;
+        //     return `src/${file}.js`;
         // }).join('\n'))
 );
 await fs.writeFile(path.resolve(module__dirname, 'README.md'), readme);

@@ -4,7 +4,7 @@ import path, { dirname } from 'node:path';
 import { expect, assert } from 'chai';
 import { deleteAsync } from 'del';
 
-import { helpmate } from '../helpmate/index.js';
+import { helpmate } from '../src/index.js';
 
 const moduleDir = dirname(import.meta.url).replace('file://', '');
 
