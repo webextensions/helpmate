@@ -1,5 +1,5 @@
 # helpmate
-Helpmate - A collection of various helper functions for Node.js
+Helpmate - A collection of various helper functions for Browser and Node.js
 
 ## Example Usages
 
