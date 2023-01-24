@@ -25,13 +25,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -61,13 +62,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -97,13 +99,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -133,13 +136,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -169,13 +173,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -205,13 +210,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -241,13 +247,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -277,13 +284,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -313,13 +321,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -349,13 +358,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -385,13 +395,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -421,13 +432,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -457,13 +469,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -493,13 +506,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -529,13 +543,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     },
@@ -565,13 +580,14 @@
             },
             {
                 "name": "commonjs",
-                "version": "24.0.0"
+                "version": "24.0.1"
             },
             {
                 "name": "json"
             },
             {
-                "name": "terser"
+                "name": "terser",
+                "numOfWorkersUsed": 0
             }
         ]
     }
