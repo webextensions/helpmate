@@ -269,4 +269,6 @@ await fs.writeFile(path.resolve(module__dirname, 'README.md'), readme);
 console.log('');
 console.log(' ✓ Updated README.md file');
 
+await fs.writeFile(path.resolve(module__dirname, 'rollup.generated-config.json'), JSON.stringify(rollupConfig, null, 4));
+
 export default rollupConfig; // eslint-disable-line import/no-default-export

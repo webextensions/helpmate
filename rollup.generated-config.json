@@ -1,0 +1,578 @@
+[
+    {
+        "input": "helpmate/array/sortArrayOfObjectsByProperty.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/array/sortArrayOfObjectsByProperty.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/array/sortArrayOfObjectsByProperty.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/array/index.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/array/index.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/array/index.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/async/eachOfLimitInOrder.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/async/eachOfLimitInOrder.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/async/eachOfLimitInOrder.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/async/index.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/async/index.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/async/index.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/browser/getBrowser.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/browser/getBrowser.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/browser/getBrowser.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/browser/index.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/browser/index.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/browser/index.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/fs/updateFileIfRequired.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/fs/updateFileIfRequired.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/fs/updateFileIfRequired.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/fs/index.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/fs/index.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/fs/index.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/logger/noteDown.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/logger/noteDown.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/logger/noteDown.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/logger/index.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/logger/index.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/logger/index.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/misc/copyToClipboard.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/misc/copyToClipboard.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/misc/copyToClipboard.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/misc/humanReadableByteSize.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/misc/humanReadableByteSize.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/misc/humanReadableByteSize.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/misc/retryNTimesWithDelay.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/misc/retryNTimesWithDelay.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/misc/retryNTimesWithDelay.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/misc/timeout.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/misc/timeout.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/misc/timeout.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/misc/index.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/misc/index.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/misc/index.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    },
+    {
+        "input": "helpmate/index.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/index.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/index.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.0"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser"
+            }
+        ]
+    }
+]
