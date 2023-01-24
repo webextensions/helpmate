@@ -11,10 +11,10 @@ const moduleDir = dirname(import.meta.url).replace('file://', '');
 describe('helpmate', function () {
     describe('helpmate.fs', function () {
         describe('helpmate.fs.updateFileIfRequired', function () {
-            var filePath = path.normalize(moduleDir + '/data/temp.txt');
+            const filePath = path.normalize(moduleDir + '/data/temp.txt');
             before(function (done) {
-                fs.open(filePath, 'r', function (err, exists) {
-                    var fileExists = true;
+                fs.open(filePath, 'r', function (err, exists) { // eslint-disable-line no-unused-vars
+                    let fileExists = true;
 
                     if (err && err.code === 'ENOENT') {
                         fileExists = false;
@@ -25,13 +25,13 @@ describe('helpmate', function () {
             });
 
             it('Writes the file contents', function (done) {
-                var data = 'This is dummy data.';
+                const data = 'This is dummy data.';
                 helpmate.fs.updateFileIfRequired(
                     {
                         file: filePath,
                         data: data,
-                        callback: function (err, status) {
-                            var dataFromNewFile = fs.readFileSync(filePath, 'utf8');
+                        callback: function (err, status) { // eslint-disable-line no-unused-vars
+                            const dataFromNewFile = fs.readFileSync(filePath, 'utf8');
                             expect(dataFromNewFile).to.equal(data);
                             (async () => {
                                 await deleteAsync([filePath]);
@@ -42,9 +42,10 @@ describe('helpmate', function () {
                 );
             });
             it('Updates the file contents', function (done) {
-                var oldData = 'This is old data.',
+                const
+                    oldData = 'This is old data.',
                     newData = 'This is new data.';
-                fs.writeFileSync(filePath, oldData, {encoding: 'utf8'});
+                fs.writeFileSync(filePath, oldData, { encoding: 'utf8' });
                 helpmate.fs.updateFileIfRequired(
                     {
                         file: filePath,
@@ -52,7 +53,7 @@ describe('helpmate', function () {
                         callback: function (err, status) {
                             expect(status).to.equal('file-updated');
 
-                            var dataFromNewFile = fs.readFileSync(filePath, 'utf8');
+                            const dataFromNewFile = fs.readFileSync(filePath, 'utf8');
                             expect(dataFromNewFile).to.equal(newData);
                             (async () => {
                                 await deleteAsync([filePath]);
