@@ -49,7 +49,8 @@ const plugins = [
 ];
 
 const output = {
-    exports: 'named'
+    exports: 'named',
+    sourcemap: true
 };
 
 /*
