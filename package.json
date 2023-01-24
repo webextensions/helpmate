@@ -16,6 +16,7 @@
     "files": [
         "dist/",
         "helpmate/",
+        "test/",
         ".editorconfig",
         ".eslintrc",
         ".eslintignore",
