@@ -444,80 +444,6 @@
         ]
     },
     {
-        "input": "src/misc/retryNTimesWithDelay.js",
-        "output": [
-            {
-                "exports": "named",
-                "sourcemap": true,
-                "format": "cjs",
-                "file": "dist/misc/retryNTimesWithDelay.cjs"
-            },
-            {
-                "exports": "named",
-                "sourcemap": true,
-                "format": "esm",
-                "file": "dist/misc/retryNTimesWithDelay.js"
-            }
-        ],
-        "plugins": [
-            {
-                "name": "node-resolve",
-                "version": "15.0.1",
-                "resolveId": {
-                    "order": "post"
-                }
-            },
-            {
-                "name": "commonjs",
-                "version": "24.0.1"
-            },
-            {
-                "name": "json"
-            },
-            {
-                "name": "terser",
-                "numOfWorkersUsed": 0
-            }
-        ]
-    },
-    {
-        "input": "src/misc/timeout.js",
-        "output": [
-            {
-                "exports": "named",
-                "sourcemap": true,
-                "format": "cjs",
-                "file": "dist/misc/timeout.cjs"
-            },
-            {
-                "exports": "named",
-                "sourcemap": true,
-                "format": "esm",
-                "file": "dist/misc/timeout.js"
-            }
-        ],
-        "plugins": [
-            {
-                "name": "node-resolve",
-                "version": "15.0.1",
-                "resolveId": {
-                    "order": "post"
-                }
-            },
-            {
-                "name": "commonjs",
-                "version": "24.0.1"
-            },
-            {
-                "name": "json"
-            },
-            {
-                "name": "terser",
-                "numOfWorkersUsed": 0
-            }
-        ]
-    },
-    {
         "input": "src/misc/index.js",
         "output": [
             {
@@ -531,6 +457,154 @@
                 "sourcemap": true,
                 "format": "esm",
                 "file": "dist/misc/index.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.1"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser",
+                "numOfWorkersUsed": 0
+            }
+        ]
+    },
+    {
+        "input": "src/scheduler/occasionally.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/scheduler/occasionally.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/scheduler/occasionally.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.1"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser",
+                "numOfWorkersUsed": 0
+            }
+        ]
+    },
+    {
+        "input": "src/scheduler/retryNTimesWithDelay.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/scheduler/retryNTimesWithDelay.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/scheduler/retryNTimesWithDelay.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.1"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser",
+                "numOfWorkersUsed": 0
+            }
+        ]
+    },
+    {
+        "input": "src/scheduler/timeout.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/scheduler/timeout.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/scheduler/timeout.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "24.0.1"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser",
+                "numOfWorkersUsed": 0
+            }
+        ]
+    },
+    {
+        "input": "src/scheduler/index.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/scheduler/index.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/scheduler/index.js"
             }
         ],
         "plugins": [

@@ -39,9 +39,12 @@ import { logger } from 'helpmate/dist/logger/index.js';
 
 import { copyToClipboard } from 'helpmate/dist/misc/copyToClipboard.js';
 import { humanReadableByteSize } from 'helpmate/dist/misc/humanReadableByteSize.js';
-import { retryNTimesWithDelay } from 'helpmate/dist/misc/retryNTimesWithDelay.js';
-import { timeout } from 'helpmate/dist/misc/timeout.js';
 import { misc } from 'helpmate/dist/misc/index.js';
+
+import { occasionally } from 'helpmate/dist/scheduler/occasionally.js';
+import { retryNTimesWithDelay } from 'helpmate/dist/scheduler/retryNTimesWithDelay.js';
+import { timeout } from 'helpmate/dist/scheduler/timeout.js';
+import { scheduler } from 'helpmate/dist/scheduler/index.js';
 
 import { helpmate } from 'helpmate/dist/index.js';
 import { helpmate } from 'helpmate';
@@ -66,9 +69,12 @@ const { logger } = require('helpmate/dist/logger/index.cjs');
 
 const { copyToClipboard } = require('helpmate/dist/misc/copyToClipboard.cjs');
 const { humanReadableByteSize } = require('helpmate/dist/misc/humanReadableByteSize.cjs');
-const { retryNTimesWithDelay } = require('helpmate/dist/misc/retryNTimesWithDelay.cjs');
-const { timeout } = require('helpmate/dist/misc/timeout.cjs');
 const { misc } = require('helpmate/dist/misc/index.cjs');
+
+const { occasionally } = require('helpmate/dist/scheduler/occasionally.cjs');
+const { retryNTimesWithDelay } = require('helpmate/dist/scheduler/retryNTimesWithDelay.cjs');
+const { timeout } = require('helpmate/dist/scheduler/timeout.cjs');
+const { scheduler } = require('helpmate/dist/scheduler/index.cjs');
 
 const { helpmate } = require('helpmate/dist/index.cjs');
 const { helpmate } = require('helpmate');
@@ -94,9 +100,12 @@ src/logger/index.js
 
 src/misc/copyToClipboard.js
 src/misc/humanReadableByteSize.js
-src/misc/retryNTimesWithDelay.js
-src/misc/timeout.js
 src/misc/index.js
+
+src/scheduler/occasionally.js
+src/scheduler/retryNTimesWithDelay.js
+src/scheduler/timeout.js
+src/scheduler/index.js
 
 src/index.js
 ```

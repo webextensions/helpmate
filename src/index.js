@@ -4,6 +4,7 @@ import { browser } from './browser/index.js';
 import { fs } from './fs/index.js';
 import logger from 'note-down';
 import { misc } from './misc/index.js';
+import { scheduler } from './scheduler/index.js';
 
 const helpmate = {
     array,
@@ -11,7 +12,8 @@ const helpmate = {
     browser,
     fs,
     logger,
-    misc
+    misc,
+    scheduler
 };
 
 export { helpmate };
