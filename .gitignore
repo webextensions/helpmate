@@ -3,6 +3,7 @@ dist/*
 
 # Output files for `$ npm pack` command
 helpmate-*.tgz
+helpmate-*/
 
 # Logs
 logs

@@ -1,6 +1,7 @@
 /* eslint-disable filenames/match-exported */
 
 import { promises as fs } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import path, { dirname } from 'node:path';
 
 import resolve from '@rollup/plugin-node-resolve';
@@ -248,11 +249,10 @@ console.log('    ' + listOfImports.join('\n    '));
 console.log('\nExamples of `require` for the modules:');
 console.log('    ' + listOfRequires.join('\n    '));
 
-const module__dirname = dirname(import.meta.url).replace('file://', '');
-// console.log(module__dirname);
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const readmeTemplate = await fs.readFile(
-    path.resolve(module__dirname, 'README.md.template')
+    path.resolve(__dirname, 'README.md.template')
 );
 const readme = (
     readmeTemplate
@@ -264,11 +264,11 @@ const readme = (
         //     return `src/${file}.js`;
         // }).join('\n'))
 );
-await fs.writeFile(path.resolve(module__dirname, 'README.md'), readme);
+await fs.writeFile(path.resolve(__dirname, 'README.md'), readme);
 
 console.log('');
 console.log(' ✓ Updated README.md file');
 
-await fs.writeFile(path.resolve(module__dirname, 'rollup.generated-config.json'), JSON.stringify(rollupConfig, null, 4));
+await fs.writeFile(path.resolve(__dirname, 'rollup.generated-config.json'), JSON.stringify(rollupConfig, null, 4));
 
 export default rollupConfig; // eslint-disable-line import/no-default-export
