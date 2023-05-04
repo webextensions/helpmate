@@ -6,6 +6,7 @@
     "main": "dist/index.cjs",
     "module": "dist/index.js",
     "scripts": {
+        "postversion": "git push --follow-tags",
         "lint": "eslint . --ext .js,.mjs --report-unused-disable-directives",
         "lint-fix": "eslint . --ext .js,.mjs --report-unused-disable-directives --fix",
         "mocha": "mocha --reporter spec",
