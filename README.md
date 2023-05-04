@@ -32,6 +32,7 @@ import { copyToClipboard } from 'helpmate/dist/browser/copyToClipboard.js';
 import { getBrowser } from 'helpmate/dist/browser/getBrowser.js';
 import { browser } from 'helpmate/dist/browser/index.js';
 
+import { alertDialog } from 'helpmate/dist/dom/alertDialog.js';
 import { forceBlur } from 'helpmate/dist/dom/forceBlur.js';
 import { dom } from 'helpmate/dist/dom/index.js';
 
@@ -75,6 +76,7 @@ const { copyToClipboard } = require('helpmate/dist/browser/copyToClipboard.cjs')
 const { getBrowser } = require('helpmate/dist/browser/getBrowser.cjs');
 const { browser } = require('helpmate/dist/browser/index.cjs');
 
+const { alertDialog } = require('helpmate/dist/dom/alertDialog.cjs');
 const { forceBlur } = require('helpmate/dist/dom/forceBlur.cjs');
 const { dom } = require('helpmate/dist/dom/index.cjs');
 
@@ -119,6 +121,7 @@ src/browser/copyToClipboard.js
 src/browser/getBrowser.js
 src/browser/index.js
 
+src/dom/alertDialog.js
 src/dom/forceBlur.js
 src/dom/index.js
 
