@@ -1,6 +1,6 @@
 {
     "name": "helpmate",
-    "version": "1.5.3",
+    "version": "1.5.4",
     "description": "Helpmate - A collection of various helper functions for Node.js and Browser",
     "type": "module",
     "main": "dist/index.cjs",
