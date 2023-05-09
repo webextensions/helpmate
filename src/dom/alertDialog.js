@@ -1,21 +1,37 @@
-/* globals document */
+/* globals document, HTMLElement */
 
 const alertDialog = (message) => {
-    const dialogElement = document.createElement('dialog');
-    document.body.appendChild(dialogElement);
+    const dialog = document.createElement('dialog');
+    document.body.appendChild(dialog);
 
-    dialogElement.innerText = message;
+    const itemsToInsert = Array.isArray(message) ? message : [message];
 
-    dialogElement.addEventListener(
+    for (const item of itemsToInsert) {
+        if (item instanceof HTMLElement) {
+            dialog.appendChild(item);
+        } else if (typeof item?.innerHTML === 'string') {
+            const div = document.createElement('div');
+            div.innerHTML = item.innerHTML;
+            const children = div.children;
+            for (const child of children) {
+                dialog.appendChild(child);
+            }
+        } else {
+            const textNode = document.createTextNode(item);
+            dialog.appendChild(textNode);
+        }
+    }
+
+    dialog.addEventListener(
         'click',
         function (evt) {
-            if (evt.target === dialogElement) {
-                dialogElement.close();
+            if (evt.target === dialog) {
+                dialog.close();
             }
         }
     );
 
-    dialogElement.showModal();
+    dialog.showModal();
 };
 
 export { alertDialog };
