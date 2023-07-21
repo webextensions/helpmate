@@ -1,4 +1,4 @@
-import logger from 'note-down';
+import { logger } from 'note-down';
 
 const noteDown = logger;
 

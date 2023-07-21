@@ -4,7 +4,7 @@ import { browser } from './browser/index.js';
 import { dom } from './dom/index.js';
 import { fs } from './fs/index.js';
 import { hooks } from './hooks/index.js';
-import logger from 'note-down';
+import { logger } from 'note-down';
 import { misc } from './misc/index.js';
 import { scheduler } from './scheduler/index.js';
 import { uuid } from './uuid/index.js';
