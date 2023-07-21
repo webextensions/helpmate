@@ -59,7 +59,7 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-react": "^7.33.0",
         "eslint-plugin-react-hooks": "^4.6.0",
-        "eslint-plugin-unicorn": "^47.0.0",
+        "eslint-plugin-unicorn": "^48.0.0",
         "mocha": "^10.2.0",
         "rollup": "^3.26.3"
     }
