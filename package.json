@@ -3,6 +3,9 @@
     "version": "1.5.5",
     "description": "Helpmate - A collection of various helper functions for Node.js and Browser",
     "type": "module",
+    "engines": {
+        "node": ">=14"
+    },
     "main": "dist/index.cjs",
     "module": "dist/index.js",
     "scripts": {
