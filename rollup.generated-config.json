@@ -629,6 +629,43 @@
         ]
     },
     {
+        "input": "src/misc/trackTime.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/misc/trackTime.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/misc/trackTime.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.1.0",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "25.0.3"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser",
+                "numOfWorkersUsed": 0
+            }
+        ]
+    },
+    {
         "input": "src/misc/index.js",
         "output": [
             {

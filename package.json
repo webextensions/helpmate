@@ -8,7 +8,7 @@
     "scripts": {
         "lint": "eslint . --ext .js,.mjs --report-unused-disable-directives",
         "lint-fix": "eslint . --ext .js,.mjs --report-unused-disable-directives --fix",
-        "mocha": "mocha --reporter spec",
+        "mocha": "mocha --reporter spec 'test/**/*.mjs'",
         "start": "npm run start:build",
         "start:build": "rm -rf dist/; rollup --config",
         "start:build:watch": "rm -rf dist/; rollup --watch --config",
