@@ -9,13 +9,15 @@
     "main": "dist/index.cjs",
     "module": "dist/index.js",
     "scripts": {
-        "lint": "eslint . --ext .js,.mjs --report-unused-disable-directives",
-        "lint-fix": "eslint . --ext .js,.mjs --report-unused-disable-directives --fix",
+        "clean": "rm -rf dist/",
+        "lint": "    eslint . --ext .cjs,.js,.mjs,.ts,.tsx --report-unused-disable-directives",
+        "lint:fix": "eslint . --ext .cjs,.js,.mjs,.ts,.tsx --report-unused-disable-directives --fix",
         "mocha": "mocha --reporter spec 'test/**/*.mjs'",
-        "start": "npm run start:build",
-        "start:build": "rm -rf dist/; rollup --config",
-        "start:build:watch": "rm -rf dist/; rollup --watch --config",
-        "test": "npm run lint && npm run mocha"
+        "start:build": "      npm run clean && rollup --config",
+        "start:build:watch": "npm run clean && rollup --watch --config",
+        "start": "npm run start:build:watch",
+        "test": "npm run lint && npm run mocha",
+        "prepack": "npm run start:build"
     },
     "files": [
         "dist/",
