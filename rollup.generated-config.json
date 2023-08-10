@@ -370,6 +370,80 @@
         ]
     },
     {
+        "input": "src/forms/isValidEmail.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/forms/isValidEmail.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/forms/isValidEmail.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.1.0",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "25.0.3"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser",
+                "numOfWorkersUsed": 0
+            }
+        ]
+    },
+    {
+        "input": "src/forms/index.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/forms/index.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/forms/index.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "15.1.0",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "25.0.3"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser",
+                "numOfWorkersUsed": 0
+            }
+        ]
+    },
+    {
         "input": "src/fs/updateFileIfRequired.js",
         "output": [
             {

@@ -2,6 +2,7 @@ import { array } from './array/index.js';
 import { async } from './async/index.js';
 import { browser } from './browser/index.js';
 import { dom } from './dom/index.js';
+import { forms } from './forms/index.js';
 import { fs } from './fs/index.js';
 import { hooks } from './hooks/index.js';
 import { logger } from 'note-down';
@@ -15,6 +16,7 @@ const helpmate = {
     async,
     browser,
     dom,
+    forms,
     fs,
     hooks,
     logger,
