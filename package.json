@@ -16,7 +16,8 @@
         "start:build": "      npm run clean && rollup --config",
         "start:build:watch": "npm run clean && rollup --watch --config",
         "start": "npm run start:build:watch",
-        "test": "npm run lint && npm run mocha"
+        "test": "npm run lint && npm run mocha",
+        "version": "npm run start:build"
     },
     "files": [
         "dist/",
