@@ -1,5 +1,4 @@
 /* eslint-disable unicorn/filename-case */
-/* globals crypto */
 
 const randomUUID = function () {
     let uuid;
