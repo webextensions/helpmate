@@ -1,6 +1,7 @@
 import { array } from './array/index.js';
 import { async } from './async/index.js';
 import { browser } from './browser/index.js';
+import { control } from './control/index.js';
 import { dom } from './dom/index.js';
 import { forms } from './forms/index.js';
 import { fs } from './fs/index.js';
@@ -15,6 +16,7 @@ const helpmate = {
     array,
     async,
     browser,
+    control,
     dom,
     forms,
     fs,
