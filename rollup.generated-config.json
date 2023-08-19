@@ -18,14 +18,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -55,14 +55,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -92,14 +92,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -129,14 +129,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -166,14 +166,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -203,14 +203,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -240,14 +240,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -277,14 +277,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -314,14 +314,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -351,14 +351,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -388,14 +388,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -425,14 +425,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -462,14 +462,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -499,14 +499,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -536,14 +536,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -573,14 +573,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -610,14 +610,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -647,14 +647,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -684,14 +684,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -721,14 +721,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -758,14 +758,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -795,14 +795,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -832,14 +832,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -869,14 +869,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -906,14 +906,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -943,14 +943,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -980,14 +980,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -1017,14 +1017,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -1054,14 +1054,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -1091,14 +1091,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -1128,14 +1128,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -1165,14 +1165,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
@@ -1202,14 +1202,14 @@
         "plugins": [
             {
                 "name": "node-resolve",
-                "version": "15.1.0",
+                "version": "15.2.0",
                 "resolveId": {
                     "order": "post"
                 }
             },
             {
                 "name": "commonjs",
-                "version": "25.0.3"
+                "version": "25.0.4"
             },
             {
                 "name": "json"
