@@ -6,6 +6,7 @@ import { dom } from './dom/index.js';
 import { forms } from './forms/index.js';
 import { fs } from './fs/index.js';
 import { hooks } from './hooks/index.js';
+import { json } from './json/index.js';
 import { logger } from 'note-down';
 import { misc } from './misc/index.js';
 import { scheduler } from './scheduler/index.js';
@@ -21,6 +22,7 @@ const helpmate = {
     forms,
     fs,
     hooks,
+    json,
     logger,
     misc,
     scheduler,

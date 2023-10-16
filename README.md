@@ -48,6 +48,9 @@ import { fs } from 'helpmate/dist/fs/index.js';
 import { createUsePrevious } from 'helpmate/dist/hooks/createUsePrevious.js';
 import { hooks } from 'helpmate/dist/hooks/index.js';
 
+import { hashMergeProperties } from 'helpmate/dist/json/hashMergeProperties.js';
+import { json } from 'helpmate/dist/json/index.js';
+
 import { noteDown } from 'helpmate/dist/logger/noteDown.js';
 import { logger } from 'helpmate/dist/logger/index.js';
 
@@ -98,6 +101,9 @@ const { fs } = require('helpmate/dist/fs/index.cjs');
 
 const { createUsePrevious } = require('helpmate/dist/hooks/createUsePrevious.cjs');
 const { hooks } = require('helpmate/dist/hooks/index.cjs');
+
+const { hashMergeProperties } = require('helpmate/dist/json/hashMergeProperties.cjs');
+const { json } = require('helpmate/dist/json/index.cjs');
 
 const { noteDown } = require('helpmate/dist/logger/noteDown.cjs');
 const { logger } = require('helpmate/dist/logger/index.cjs');
@@ -150,6 +156,9 @@ src/fs/index.js
 
 src/hooks/createUsePrevious.js
 src/hooks/index.js
+
+src/json/hashMergeProperties.js
+src/json/index.js
 
 src/logger/noteDown.js
 src/logger/index.js
