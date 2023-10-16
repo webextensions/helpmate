@@ -1,6 +1,8 @@
+/* global describe, it */
+
 import { expect } from 'chai';
 
-import { hashMergeProperties } from '../../src/json/hashMergeProperties.js';
+import { hashMergeProperties } from './hashMergeProperties.js';
 
 describe('json/hashMergeProperties', function () {
     it('Merges properties which are tagged with "#merge"', function () {

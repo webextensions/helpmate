@@ -12,7 +12,7 @@
         "clean": "rm -rf dist/",
         "lint": "    eslint . --ext .cjs,.js,.mjs,.ts,.tsx --report-unused-disable-directives",
         "lint:fix": "eslint . --ext .cjs,.js,.mjs,.ts,.tsx --report-unused-disable-directives --fix",
-        "mocha": "mocha --reporter spec 'test/**/*.mjs'",
+        "mocha": "mocha --reporter spec 'test/**/*.mjs' 'src/**/*.test.mjs'",
         "start:build": "      npm run clean && rollup --config",
         "start:build:watch": "npm run clean && rollup --watch --config",
         "start": "npm run start:build:watch",
