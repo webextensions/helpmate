@@ -78,7 +78,15 @@ const helpmateDir = path.resolve('./src');
 const helpmateDirLength = helpmateDir.length;
 
 const getFiles = async (dir) => {
-    const dirents = await fs.readdir(dir, { withFileTypes: true });
+    let dirents = await fs.readdir(dir, { withFileTypes: true });
+    dirents = dirents.filter((dirent) => {
+        if (dirent.name.endsWith('.test.mjs')) {
+            return false;
+        } else {
+            return true;
+        }
+    });
+
     const files = await Promise.all(dirents.map((dirent) => {
         const res = path.resolve(dir, dirent.name);
         return dirent.isDirectory() ? getFiles(res) : res;
@@ -177,7 +185,6 @@ files = filesSeparatedByNullPerDirectory;
 // console.log(files);
 // console.log(filesSeparatedByNullPerDirectory);
 // console.log('<<<<<<<<<<<<<<<');
-
 
 // Remove the "/" character from the beginning of each file which was added in one of the previous steps
 files = files.map((file) => {
