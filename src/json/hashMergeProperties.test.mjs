@@ -6,7 +6,8 @@ import { hashMergeProperties } from './hashMergeProperties.js';
 
 describe('json/hashMergeProperties', function () {
     it('Merges properties which are tagged with "#merge"', function () {
-        /* eslint-disable quotes */
+        /* eslint-disable @stylistic/quotes */
+        /* eslint-disable @stylistic/quote-props */
         const input = {
             "server": {
                 "config": {
@@ -70,7 +71,8 @@ describe('json/hashMergeProperties', function () {
                 }
             }
         };
-        /* eslint-enable quotes */
+        /* eslint-enable @stylistic/quote-props */
+        /* eslint-enable @stylistic/quotes */
 
         const output = hashMergeProperties(input);
 

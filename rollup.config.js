@@ -236,7 +236,7 @@ const rollupConfig = files.map((file) => {
         ],
         plugins
     };
-}).filter(x => x);
+}).filter((x) => x);
 
 listOfImports.push(`import { helpmate } from 'helpmate';`);
 listOfRequires.push(`const { helpmate } = require('helpmate');`);

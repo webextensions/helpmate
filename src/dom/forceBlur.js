@@ -1,7 +1,7 @@
 /* globals document */
 
 const timeout = function (ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
 const forceBlur = async function () {

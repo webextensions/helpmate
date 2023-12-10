@@ -1,4 +1,6 @@
 /* eslint-disable unicorn/filename-case */
+/* eslint-disable @stylistic/space-infix-ops */
+/* eslint-disable @stylistic/arrow-parens */
 
 const randomUUID = function () {
     let uuid;
