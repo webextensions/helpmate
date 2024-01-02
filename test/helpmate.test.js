@@ -1,12 +1,15 @@
 import fs from 'node:fs';
-import path, { dirname } from 'node:path';
+import path from 'node:path';
 
 import { expect, assert } from 'chai';
-import { deleteAsync } from 'del';
+import del from 'del';
 
 import { helpmate } from '../src/index.js';
 
-const moduleDir = dirname(import.meta.url).replace('file://', '');
+// import { dirname } from 'node:path';
+// import { fileURLToPath } from 'node:url';
+// const moduleDir = dirname(fileURLToPath(import.meta.url));
+const moduleDir = __dirname;
 
 describe('helpmate', function () {
     describe('helpmate.fs', function () {
@@ -34,7 +37,7 @@ describe('helpmate', function () {
                             const dataFromNewFile = fs.readFileSync(filePath, 'utf8');
                             expect(dataFromNewFile).to.equal(data);
                             (async () => {
-                                await deleteAsync([filePath]);
+                                await del([filePath]);
                                 done();
                             })();
                         }
@@ -56,7 +59,7 @@ describe('helpmate', function () {
                             const dataFromNewFile = fs.readFileSync(filePath, 'utf8');
                             expect(dataFromNewFile).to.equal(newData);
                             (async () => {
-                                await deleteAsync([filePath]);
+                                await del([filePath]);
                                 done();
                             })();
                         }
@@ -66,4 +69,3 @@ describe('helpmate', function () {
         });
     });
 });
-/* */
