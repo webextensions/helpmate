@@ -9,7 +9,7 @@
         //         $ npx install-peerdeps --dev eslint-config-ironplate
         // Reference:
         //     https://github.com/webextensions/eslint-config-ironplate/blob/master/index.js
-        "eslint-config-ironplate/node"
+        "eslint-config-ironplate/node.js"
     ],
 
     // Add ESLint plugins here. If they are stable and useful, move those as a pull
