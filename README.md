@@ -54,6 +54,7 @@ import { json } from 'helpmate/dist/json/index.js';
 import { noteDown } from 'helpmate/dist/logger/noteDown.js';
 import { logger } from 'helpmate/dist/logger/index.js';
 
+import { getReadableRelativeTime } from 'helpmate/dist/misc/getReadableRelativeTime.js';
 import { htmlEscape } from 'helpmate/dist/misc/htmlEscape.js';
 import { humanReadableByteSize } from 'helpmate/dist/misc/humanReadableByteSize.js';
 import { trackTime } from 'helpmate/dist/misc/trackTime.js';
@@ -109,6 +110,7 @@ const { json } = require('helpmate/dist/json/index.cjs');
 const { noteDown } = require('helpmate/dist/logger/noteDown.cjs');
 const { logger } = require('helpmate/dist/logger/index.cjs');
 
+const { getReadableRelativeTime } = require('helpmate/dist/misc/getReadableRelativeTime.cjs');
 const { htmlEscape } = require('helpmate/dist/misc/htmlEscape.cjs');
 const { humanReadableByteSize } = require('helpmate/dist/misc/humanReadableByteSize.cjs');
 const { trackTime } = require('helpmate/dist/misc/trackTime.cjs');
@@ -165,6 +167,7 @@ src/json/index.js
 src/logger/noteDown.js
 src/logger/index.js
 
+src/misc/getReadableRelativeTime.js
 src/misc/htmlEscape.js
 src/misc/humanReadableByteSize.js
 src/misc/trackTime.js
