@@ -1,4 +1,4 @@
-import async from 'async';
+import { eachOfLimit } from 'async';
 
 import { sortArrayOfObjectsByProperty } from '../array/sortArrayOfObjectsByProperty.js';
 
@@ -26,7 +26,7 @@ const eachOfLimitInOrder = function (items, concurrency, cb, complete) {
         }
     };
 
-    async.eachOfLimit(items, concurrency, function (item, key, _cb) {
+    eachOfLimit(items, concurrency, function (item, key, _cb) {
         cb(item, key, function (err, cbOrderedOutput) {
             let callCbAfterFlushOutputs = null;
 

@@ -30,6 +30,7 @@ import { async } from 'helpmate/dist/async/index.js';
 
 import { copyToClipboard } from 'helpmate/dist/browser/copyToClipboard.js';
 import { getBrowser } from 'helpmate/dist/browser/getBrowser.js';
+import { safeLocalStorage } from 'helpmate/dist/browser/safeLocalStorage.js';
 import { browser } from 'helpmate/dist/browser/index.js';
 
 import { tryCatch } from 'helpmate/dist/control/tryCatch.js';
@@ -86,6 +87,7 @@ const { async } = require('helpmate/dist/async/index.cjs');
 
 const { copyToClipboard } = require('helpmate/dist/browser/copyToClipboard.cjs');
 const { getBrowser } = require('helpmate/dist/browser/getBrowser.cjs');
+const { safeLocalStorage } = require('helpmate/dist/browser/safeLocalStorage.cjs');
 const { browser } = require('helpmate/dist/browser/index.cjs');
 
 const { tryCatch } = require('helpmate/dist/control/tryCatch.cjs');
@@ -143,6 +145,7 @@ src/async/index.js
 
 src/browser/copyToClipboard.js
 src/browser/getBrowser.js
+src/browser/safeLocalStorage.js
 src/browser/index.js
 
 src/control/tryCatch.js
