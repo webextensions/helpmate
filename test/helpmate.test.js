@@ -2,6 +2,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 import { expect, assert } from 'chai';
+
+// Currently, the tests are run via @babel/register which seems to be converting the syntax to CommonJS, which can't
+// import ES modules. So, wait for import ES modules support in Node.js (to mature out of experimental support).
+// Afterwards, the package `del` can be updated from the current version del@=6.1.1.
 import del from 'del';
 
 import { helpmate } from '../src/index.js';
