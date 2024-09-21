@@ -8,7 +8,7 @@ const isCopyToClipboardSupported = function () {
         typeof navigator.clipboard.writeText === 'function'
     );
 
-    return flag;
+    return !!flag;
 };
 
 const copyToClipboard = async function (simpleText) {
