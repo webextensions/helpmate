@@ -47,6 +47,7 @@ import { updateFileIfRequired } from 'helpmate/dist/fs/updateFileIfRequired.js';
 import { fs } from 'helpmate/dist/fs/index.js';
 
 import { createUsePrevious } from 'helpmate/dist/hooks/createUsePrevious.js';
+import { useMinHeight } from 'helpmate/dist/hooks/useMinHeight.js';
 import { hooks } from 'helpmate/dist/hooks/index.js';
 
 import { hashMergeProperties } from 'helpmate/dist/json/hashMergeProperties.js';
@@ -104,6 +105,7 @@ const { updateFileIfRequired } = require('helpmate/dist/fs/updateFileIfRequired.
 const { fs } = require('helpmate/dist/fs/index.cjs');
 
 const { createUsePrevious } = require('helpmate/dist/hooks/createUsePrevious.cjs');
+const { useMinHeight } = require('helpmate/dist/hooks/useMinHeight.cjs');
 const { hooks } = require('helpmate/dist/hooks/index.cjs');
 
 const { hashMergeProperties } = require('helpmate/dist/json/hashMergeProperties.cjs');
@@ -162,6 +164,7 @@ src/fs/updateFileIfRequired.js
 src/fs/index.js
 
 src/hooks/createUsePrevious.js
+src/hooks/useMinHeight.js
 src/hooks/index.js
 
 src/json/hashMergeProperties.js

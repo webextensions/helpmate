@@ -1,7 +1,9 @@
 import { createUsePrevious } from './createUsePrevious.js';
+import { useMinHeight } from './useMinHeight.js';
 
 const hooks = {
-    createUsePrevious
+    createUsePrevious,
+    useMinHeight
 };
 
 export { hooks };
