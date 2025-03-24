@@ -1,6 +1,6 @@
 /* global localStorage */
 
-const safeLocalStorage = {
+const safeLocalStorageSimple = {
     getItem: function (key) {
         try {
             return localStorage.getItem(key);
@@ -38,4 +38,4 @@ const safeLocalStorage = {
     }
 };
 
-export { safeLocalStorage };
+export { safeLocalStorageSimple };

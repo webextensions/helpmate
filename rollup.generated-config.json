@@ -222,19 +222,19 @@
         ]
     },
     {
-        "input": "src/browser/safeLocalStorage.js",
+        "input": "src/browser/safeLocalStorageSimple.js",
         "output": [
             {
                 "exports": "named",
                 "sourcemap": true,
                 "format": "cjs",
-                "file": "dist/browser/safeLocalStorage.cjs"
+                "file": "dist/browser/safeLocalStorageSimple.cjs"
             },
             {
                 "exports": "named",
                 "sourcemap": true,
                 "format": "esm",
-                "file": "dist/browser/safeLocalStorage.js"
+                "file": "dist/browser/safeLocalStorageSimple.js"
             }
         ],
         "plugins": [
