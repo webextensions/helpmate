@@ -1,9 +1,0 @@
-# http://eslint.org/docs/user-guide/configuring.html#ignoring-files-and-directories
-
-# node_modules ignored by default
-
-# Temporary files
-/temp/
-
-# Auto-generated directories and contents
-/dist/
