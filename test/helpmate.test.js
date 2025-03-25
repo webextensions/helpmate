@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 import { expect, assert } from 'chai';
 
-import del from 'del';
+import { deleteAsync } from 'del';
 
 import { helpmate } from '../src/index.js';
 
@@ -39,7 +39,7 @@ describe('helpmate', function () {
                             const dataFromNewFile = fs.readFileSync(filePath, 'utf8');
                             expect(dataFromNewFile).to.equal(data);
                             (async () => {
-                                await del([filePath]);
+                                await deleteAsync([filePath]);
                                 done();
                             })();
                         }
@@ -61,7 +61,7 @@ describe('helpmate', function () {
                             const dataFromNewFile = fs.readFileSync(filePath, 'utf8');
                             expect(dataFromNewFile).to.equal(newData);
                             (async () => {
-                                await del([filePath]);
+                                await deleteAsync([filePath]);
                                 done();
                             })();
                         }
