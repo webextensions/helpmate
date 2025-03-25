@@ -38,14 +38,7 @@ const executePass = function (json) {
 };
 
 const hashMergeProperties = (json) => {
-    let clonedJson;
-
-    if (typeof structuredClone === 'function') {
-        clonedJson = structuredClone(json);
-    } else {
-        // eslint-disable-next-line unicorn/prefer-structured-clone
-        clonedJson = JSON.parse(JSON.stringify(json));
-    }
+    const clonedJson = structuredClone(json);
 
     const mergedJson = executePass(clonedJson);
 
