@@ -8,7 +8,7 @@ const retryNTimesWithDelay = async function ({
     fn
 }) {
     // With delayStrategy, the delay is exponential
-    let err;
+    let theError;
     let delayToUse = 0;
     for (let i = 0; i < attempts; i++) {
         try {
@@ -20,11 +20,11 @@ const retryNTimesWithDelay = async function ({
                 console.log('Attempt:', i + 1, 'of', attempts, 'with delay:', delayToUse, 'ms', 'succeeded');
             }
             return;
-        } catch (e) {
+        } catch (err) {
             if (verbose) {
                 console.log('Attempt:', i + 1, 'of', attempts, 'with delay:', delayToUse, 'ms', 'failed');
             }
-            err = e;
+            theError = err;
             if (delayToUse === 0) {
                 delayToUse = delay;
             } else {
@@ -41,7 +41,7 @@ const retryNTimesWithDelay = async function ({
             await new Promise((resolve) => setTimeout(resolve, delayToUse));
         }
     }
-    throw err;
+    throw theError;
 };
 
 export { retryNTimesWithDelay };

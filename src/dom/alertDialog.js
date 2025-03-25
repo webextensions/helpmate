@@ -1,24 +1,24 @@
-/* globals document, HTMLElement */
+/* global document, HTMLElement */
 
 const alertDialog = (message) => {
     const dialog = document.createElement('dialog');
-    document.body.appendChild(dialog);
+    document.body.append(dialog);
 
     const itemsToInsert = Array.isArray(message) ? message : [message];
 
     for (const item of itemsToInsert) {
         if (item instanceof HTMLElement) {
-            dialog.appendChild(item);
+            dialog.append(item);
         } else if (typeof item?.innerHTML === 'string') {
             const div = document.createElement('div');
             div.innerHTML = item.innerHTML;
             const children = div.children;
             for (const child of children) {
-                dialog.appendChild(child);
+                dialog.append(child);
             }
         } else {
             const textNode = document.createTextNode(item);
-            dialog.appendChild(textNode);
+            dialog.append(textNode);
         }
     }
 

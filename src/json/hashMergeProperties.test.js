@@ -1,5 +1,3 @@
-/* global describe, it */
-
 import { expect } from 'chai';
 
 import { hashMergeProperties } from './hashMergeProperties.js';

@@ -1,5 +1,8 @@
+/* global before */
+
 import fs from 'node:fs';
-import path from 'node:path';
+import path, { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import { expect, assert } from 'chai';
 
@@ -10,10 +13,8 @@ import del from 'del';
 
 import { helpmate } from '../src/index.js';
 
-// import { dirname } from 'node:path';
-// import { fileURLToPath } from 'node:url';
-// const moduleDir = dirname(fileURLToPath(import.meta.url));
-const moduleDir = __dirname;
+const moduleDir = dirname(fileURLToPath(import.meta.url));
+// const moduleDir = __dirname;
 
 describe('helpmate', function () {
     describe('helpmate.fs', function () {

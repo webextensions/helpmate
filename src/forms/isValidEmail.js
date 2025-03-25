@@ -1,4 +1,4 @@
-/* eslint-env browser */
+/* global document */
 
 // https://stackoverflow.com/questions/46155/whats-the-best-way-to-validate-an-email-address-in-javascript/13975255#13975255
 const isValidEmail = function (value) {

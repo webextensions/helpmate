@@ -4,35 +4,35 @@ const safeLocalStorageSimple = {
     getItem: function (key) {
         try {
             return localStorage.getItem(key);
-        } catch (e) {
+        } catch (err) { // eslint-disable-line no-unused-vars
             return null;
         }
     },
     setItem: function (key, value) {
         try {
             localStorage.setItem(key, value);
-        } catch (e) {
+        } catch (err) { // eslint-disable-line no-unused-vars
             // do nothing
         }
     },
     removeItem: function (key) {
         try {
             localStorage.removeItem(key);
-        } catch (e) {
+        } catch (err) { // eslint-disable-line no-unused-vars
             // do nothing
         }
     },
     key: function (index) {
         try {
             return localStorage.key(index);
-        } catch (e) {
+        } catch (err) { // eslint-disable-line no-unused-vars
             return null;
         }
     },
     clear: function () {
         try {
             localStorage.clear();
-        } catch (e) {
+        } catch (err) { // eslint-disable-line no-unused-vars
             // do nothing
         }
     }

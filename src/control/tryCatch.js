@@ -20,7 +20,7 @@ const tryCatchFallback = function (fn, fallbackValue) {
     try {
         const value = fn();
         return value;
-    } catch (err) {
+    } catch (err) { // eslint-disable-line no-unused-vars
         return fallbackValue;
     }
 };
@@ -29,7 +29,7 @@ const tryCatchFallbackAsync = async function (fn, fallbackValue) {
     try {
         const value = await fn();
         return value;
-    } catch (err) {
+    } catch (err) { // eslint-disable-line no-unused-vars
         return fallbackValue;
     }
 };

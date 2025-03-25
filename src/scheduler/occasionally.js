@@ -99,6 +99,7 @@ const occasionally = function (callback, options = {}) {
     return false;
 };
 
+// eslint-disable-next-line require-await
 const occasionallyAsync = async function (callback, options) {
     return new Promise((resolve, reject) => {
         let incidentCounter;
@@ -107,7 +108,7 @@ const occasionallyAsync = async function (callback, options) {
         }, options);
 
         if (flagCalledBack) {
-            // eslint-disable-next-line node/callback-return
+            // eslint-disable-next-line n/callback-return
             callback(incidentCounter).then(resolve).catch(reject);
         } else {
             resolve();
@@ -124,9 +125,9 @@ const attachStringConstantsToFunction = function (fn) {
         ID_DEFAULT
     ];
 
-    strs.forEach((str) => {
+    for (const str of strs) {
         fn[str] = str;
-    });
+    }
 };
 
 attachStringConstantsToFunction(occasionally);

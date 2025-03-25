@@ -1,11 +1,11 @@
 const humanReadableByteSize = function (sizeInB) {
     if (
         typeof sizeInB === 'number' &&
-        !isNaN(sizeInB) &&
+        !Number.isNaN(sizeInB) &&
         sizeInB >= 0 &&
         sizeInB <= Number.MAX_SAFE_INTEGER
     ) {
-        let size = parseInt(sizeInB, 10);
+        let size = Number.parseInt(sizeInB, 10);
         if (size === 1) {
             return size + ' byte';
         }
@@ -18,10 +18,10 @@ const humanReadableByteSize = function (sizeInB) {
         for (i = 0; i < arrUnits.length; i++) {
             size = size / 1024;
             if (size < 1024) {
-                return parseFloat(size.toFixed(2)) + ' ' + arrUnits[i];
+                return Number.parseFloat(size.toFixed(2)) + ' ' + arrUnits[i];
             }
         }
-        return parseFloat(size.toFixed(2)) + ' ' + arrUnits[i - 1];
+        return Number.parseFloat(size.toFixed(2)) + ' ' + arrUnits[i - 1];
     } else {
         return sizeInB + ' bytes';
     }

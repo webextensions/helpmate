@@ -1,5 +1,3 @@
-/* eslint-disable filenames/match-exported */
-
 import { promises as fs } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path, { dirname } from 'node:path';
@@ -242,7 +240,7 @@ const generateConfig = async function () {
             ],
             plugins
         };
-    }).filter((x) => x);
+    }).filter(Boolean);
 
     listOfImports.push(`import { helpmate } from 'helpmate';`);
     listOfRequires.push(`const { helpmate } = require('helpmate');`);

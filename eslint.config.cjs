@@ -37,8 +37,8 @@ module.exports = [
         // Add ESLint rules here. If they are stable and useful, move those as a pull
         // request to https://github.com/webextensions/eslint-config-ironplate/
         rules: {
-            "filenames/no-index": "off",
-            "import/no-unresolved": [2, { "commonjs": true, "amd": true }]
+            'filenames/no-index': 'off',
+            'import/no-unresolved': [2, { commonjs: true, amd: true }]
         }
     }
 ];

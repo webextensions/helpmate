@@ -2,11 +2,11 @@ import extend from 'extend';
 
 const walk = function (json, callback) {
     if (typeof json === 'object' && json !== null) {
-        Object.keys(json).forEach(function (key) {
+        for (const key of Object.keys(json)) {
             const value = json[key];
-            callback(value, key, json); // eslint-disable-line node/callback-return
+            callback(value, key, json); // eslint-disable-line n/callback-return
             walk(value, callback);
-        });
+        }
     }
 };
 
@@ -43,6 +43,7 @@ const hashMergeProperties = (json) => {
     if (typeof structuredClone === 'function') {
         clonedJson = structuredClone(json);
     } else {
+        // eslint-disable-next-line unicorn/prefer-structured-clone
         clonedJson = JSON.parse(JSON.stringify(json));
     }
 

@@ -1,4 +1,4 @@
-/* globals window, navigator, chrome, browser */
+/* global window, chrome, browser */
 
 const getBrowserStrategyGetManifest = function () {
     let name = 'not-available';
@@ -47,7 +47,7 @@ const getBrowserStrategyGetBrowserInfo = async function () {
     };
 };
 
-const getBrowserStrategyCustomHacks = async function () {
+const getBrowserStrategyCustomHacks = function () {
     let name = 'not-available';
     const version = 'not-available';
     let byPassedUserAgentModification = false;
@@ -185,7 +185,7 @@ const getBrowser = (function () {
                         break identifyBrowserNameAndConfidenceLevel;
                     }
 
-                    name = (await getBrowserStrategyCustomHacks()).name;
+                    name = getBrowserStrategyCustomHacks().name;
                     if (name !== 'not-available') {
                         sourceOfConfidence = 'customHacks';
                         confidenceLevel = 0.9;

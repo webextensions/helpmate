@@ -3,7 +3,7 @@
     "version": "1.7.2",
     "description": "Helpmate - A collection of various helper functions for Node.js and Browser",
     "engines": {
-        "node": ">=18"
+        "node": ">=20"
     },
     "main": "dist/index.cjs",
     "module": "dist/index.js",

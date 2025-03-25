@@ -1,5 +1,3 @@
-/* globals navigator */
-
 const isCopyToClipboardSupported = function () {
     const flag = (
         typeof navigator === 'object' &&

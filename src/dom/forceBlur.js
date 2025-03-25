@@ -1,4 +1,4 @@
-/* globals document */
+/* global document */
 
 const timeout = function (ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -10,10 +10,10 @@ const forceBlur = async function () {
     input.style.visibility = 'hidden';
     input.style.opacity = '0';
 
-    document.body.appendChild(input);
+    document.body.append(input);
     input.focus();
     await timeout(0);
-    document.body.removeChild(input);
+    document.body.remove(input);
 };
 
 export { forceBlur };
