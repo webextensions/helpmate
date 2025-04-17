@@ -28,13 +28,14 @@ const basicExample = async () => {
 // Example 2: Using all callbacks
 const callbacksExample = async () => {
     console.log('\n--- Example 2: Using All Callbacks ---');
+    // eslint-disable-next-line no-unused-vars
     const [error, status] = await readFileLineByLineAsync({
         filePath: sampleFilePath,
         onBegin: () => {
             console.log('Starting to read file...');
         },
         onLine: (line, lineNumber) => {
-            console.log(`Line ${lineNumber}: ${line.substring(0, 40)}${line.length > 40 ? '...' : ''}`);
+            console.log(`Line ${lineNumber}: ${line.slice(0, 40)}${line.length > 40 ? '...' : ''}`);
             return true;
         },
         onProgress: (status) => {
@@ -56,6 +57,7 @@ const callbacksExample = async () => {
 // Example 3: Filtering lines
 const filteringExample = async () => {
     console.log('\n--- Example 3: Filtering Lines ---');
+    // eslint-disable-next-line no-unused-vars
     const [error, status] = await readFileLineByLineAsync({
         filePath: sampleFilePath,
         onLine: (line) => {
@@ -77,11 +79,12 @@ const earlyTerminationExample = async () => {
     console.log('\n--- Example 4: Early Termination ---');
     let lineCount = 0;
 
+    // eslint-disable-next-line no-unused-vars
     const [error, status] = await readFileLineByLineAsync({
         filePath: sampleFilePath,
         onLine: (line, lineNumber) => {
             lineCount++;
-            console.log(`Line ${lineNumber}: ${line.substring(0, 40)}${line.length > 40 ? '...' : ''}`);
+            console.log(`Line ${lineNumber}: ${line.slice(0, 40)}${line.length > 40 ? '...' : ''}`);
 
             // Stop after reading 5 lines by returning false
             if (lineCount >= 5) {
@@ -144,6 +147,7 @@ const checkAbortedStatusExample = async () => {
     try {
         // Create a non-existent file path to trigger an error
         const nonExistentFile = path.resolve(__dirname, 'non_existent_file.txt');
+        // eslint-disable-next-line no-unused-vars
         [error, status] = await readFileLineByLineAsync({
             filePath: nonExistentFile,
             onLine: () => true,
