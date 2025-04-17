@@ -44,6 +44,7 @@ import { dom } from 'helpmate/dist/dom/index.js';
 import { isValidEmail } from 'helpmate/dist/forms/isValidEmail.js';
 import { forms } from 'helpmate/dist/forms/index.js';
 
+import { readFileLineByLineAsync } from 'helpmate/dist/fs/readFileLineByLineAsync.js';
 import { updateFileIfRequired } from 'helpmate/dist/fs/updateFileIfRequired.js';
 import { fs } from 'helpmate/dist/fs/index.js';
 
@@ -103,6 +104,7 @@ const { dom } = require('helpmate/dist/dom/index.cjs');
 const { isValidEmail } = require('helpmate/dist/forms/isValidEmail.cjs');
 const { forms } = require('helpmate/dist/forms/index.cjs');
 
+const { readFileLineByLineAsync } = require('helpmate/dist/fs/readFileLineByLineAsync.cjs');
 const { updateFileIfRequired } = require('helpmate/dist/fs/updateFileIfRequired.cjs');
 const { fs } = require('helpmate/dist/fs/index.cjs');
 
@@ -163,6 +165,7 @@ src/dom/index.js
 src/forms/isValidEmail.js
 src/forms/index.js
 
+src/fs/readFileLineByLineAsync.js
 src/fs/updateFileIfRequired.js
 src/fs/index.js
 

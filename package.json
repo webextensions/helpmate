@@ -48,6 +48,7 @@
         "chalk": "^5.4.1",
         "del": "^8.0.0",
         "extend": "^3.0.2",
+        "event-stream": "^4.0.1",
         "note-down": "=1.0.2",
         "shelljs": "^0.9.2"
     },

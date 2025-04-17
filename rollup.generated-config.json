@@ -592,6 +592,43 @@
         ]
     },
     {
+        "input": "src/fs/readFileLineByLineAsync.js",
+        "output": [
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "cjs",
+                "file": "dist/fs/readFileLineByLineAsync.cjs"
+            },
+            {
+                "exports": "named",
+                "sourcemap": true,
+                "format": "esm",
+                "file": "dist/fs/readFileLineByLineAsync.js"
+            }
+        ],
+        "plugins": [
+            {
+                "name": "node-resolve",
+                "version": "16.0.1",
+                "resolveId": {
+                    "order": "post"
+                }
+            },
+            {
+                "name": "commonjs",
+                "version": "28.0.3"
+            },
+            {
+                "name": "json"
+            },
+            {
+                "name": "terser",
+                "numOfWorkersUsed": 0
+            }
+        ]
+    },
+    {
         "input": "src/fs/updateFileIfRequired.js",
         "output": [
             {
