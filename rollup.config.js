@@ -80,10 +80,14 @@ const generateConfig = async function () {
         let dirents = await fs.readdir(dir, { withFileTypes: true });
         dirents = dirents.filter((dirent) => {
             if (
-                dirent.name.endsWith('.test.cjs') ||
-                dirent.name.endsWith('.test.js')  ||
-                dirent.name.endsWith('.test.mjs') ||
-                dirent.name.endsWith('.test.ts')
+                dirent.name.endsWith('.test.cjs')   ||
+                dirent.name.endsWith('.test.js')    ||
+                dirent.name.endsWith('.test.mjs')   ||
+                dirent.name.endsWith('.test.ts')    ||
+                dirent.name.endsWith('.sample.cjs') ||
+                dirent.name.endsWith('.sample.js')  ||
+                dirent.name.endsWith('.sample.mjs') ||
+                dirent.name.endsWith('.sample.ts')
             ) {
                 return false;
             } else {
