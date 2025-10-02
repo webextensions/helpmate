@@ -282,7 +282,7 @@ const generateConfig = async function () {
     await fs.writeFile(path.resolve(__dirname, 'README.md'), readme);
 
     console.log('');
-    console.log(' ✓ Updated README.md file');
+    console.log(' ✔ Updated README.md file');
 
     await fs.writeFile(path.resolve(__dirname, 'rollup.generated-config.json'), JSON.stringify(rollupConfig, null, 4));
 
