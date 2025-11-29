@@ -1,4 +1,4 @@
-/* global localStorage, ResizeObserver */
+/* global ResizeObserver */
 
 import { useRef, useLayoutEffect, useEffect } from 'react';
 

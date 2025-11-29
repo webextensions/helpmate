@@ -1,5 +1,3 @@
-/* global localStorage */
-
 /*
 Notes and Limitations:
     * The `fallbackStorage` object is not shared between multiple browser tabs / windows

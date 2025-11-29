@@ -112,6 +112,7 @@ const occasionallyAsync = async function (callback, options) {
             callback(incidentCounter).then(resolve).catch(reject);
         } else {
             resolve();
+            return;
         }
     });
 };

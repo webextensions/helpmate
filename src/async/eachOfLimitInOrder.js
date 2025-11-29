@@ -8,7 +8,7 @@ const eachOfLimitInOrder = function (items, concurrency, cb, complete) {
         anyErrorSoFar = false;
 
     const flushOutputs = function () {
-        pendingOutputs = pendingOutputs.sort(sortArrayOfObjectsByProperty('index'));
+        pendingOutputs = pendingOutputs.toSorted(sortArrayOfObjectsByProperty('index'));
         const pendingOutput = pendingOutputs[0];
 
         if (pendingOutput) {

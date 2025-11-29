@@ -9,7 +9,7 @@ import terser from '@rollup/plugin-terser';
 
 const generateConfig = async function () {
     const plugins = [
-        resolve(),
+        resolve(), // eslint-disable-line n/callback-return
         commonjs(),
         json(),
         terser({

@@ -1,4 +1,6 @@
-const eslintIronPlateConfig = require('eslint-config-ironplate/node.js');
+const globals = require('globals');
+
+const eslintIronPlateConfig = require('eslint-config-ironplate/node.js').default;
 
 module.exports = [
     {
@@ -27,6 +29,10 @@ module.exports = [
             '**/*.tsx'
         ],
         languageOptions: {
+            globals: {
+                // Node.js environment globals
+                ...globals.node
+            }
         },
 
         // Add ESLint plugins here. If they are stable and useful, move those as a pull
@@ -39,6 +45,18 @@ module.exports = [
         rules: {
             'filenames/no-index': 'off',
             'import/no-unresolved': [2, { commonjs: true, amd: true }]
+        }
+    },
+
+    {
+        files: [
+            '**/*.test.js'
+        ],
+        languageOptions: {
+            globals: {
+                // Mocha environment globals
+                ...globals.mocha
+            }
         }
     }
 ];

@@ -146,10 +146,10 @@ const getBrowserStrategyUserAgent = function () {
     }
     if (M[1] === 'Chrome') {
         tem = ua.match(/\bOPR|Edge\/(\d+)/);
-        if (tem != null) { return { name: 'Opera', version: tem[1] }; }
+        if (tem !== null) { return { name: 'Opera', version: tem[1] }; }
     }
     M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
-    if ((tem = ua.match(/version\/(\d+)/i)) != null) { M.splice(1, 1, tem[1]); }
+    if ((tem = ua.match(/version\/(\d+)/i)) !== null) { M.splice(1, 1, tem[1]); }
 
     const name = M[0] || 'not-available';
     const version = M[1] || 'not-available';

@@ -38,7 +38,7 @@ const retryNTimesWithDelay = async function ({
 
                 delayToUse = Math.min(delayToUse, maxDelay);
             }
-            await new Promise((resolve) => setTimeout(resolve, delayToUse));
+            await new Promise((resolve) => { setTimeout(resolve, delayToUse); });
         }
     }
     throw theError;

@@ -1,5 +1,3 @@
-/* global localStorage */
-
 const safeLocalStorageSimple = {
     getItem: function (key) {
         try {

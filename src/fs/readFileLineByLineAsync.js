@@ -99,11 +99,13 @@ export const readFileLineByLineAsync = function ({
                             onEnd();
                         }
                         resolve([null, getStatus({ completed: true })]);
+                        return;
                     } catch (readError) {
                         if (onError) {
                             onError(readError);
                         }
                         resolve([readError, getStatus({ errored: true })]);
+                        return;
                     }
                 })();
             } catch (setupError) {
@@ -111,12 +113,14 @@ export const readFileLineByLineAsync = function ({
                     onError(setupError);
                 }
                 resolve([setupError, getStatus({ errored: true })]);
+                return;
             }
         } catch (err) {
             if (onError) {
                 onError(err);
             }
             resolve([err, { errored: true }]);
+            return;
         }
     });
 };
