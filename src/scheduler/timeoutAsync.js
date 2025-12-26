@@ -1,4 +1,4 @@
-const timeout = function (ms) {
+const timeoutAsync = function (ms) {
     return (
         new Promise((resolve) => {
             setTimeout(resolve, ms);
@@ -6,4 +6,4 @@ const timeout = function (ms) {
     );
 };
 
-export { timeout };
+export { timeoutAsync };

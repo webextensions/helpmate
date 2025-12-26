@@ -1221,19 +1221,19 @@
         ]
     },
     {
-        "input": "src/scheduler/timeout.js",
+        "input": "src/scheduler/timeoutAsync.js",
         "output": [
             {
                 "exports": "named",
                 "sourcemap": true,
                 "format": "cjs",
-                "file": "dist/scheduler/timeout.cjs"
+                "file": "dist/scheduler/timeoutAsync.cjs"
             },
             {
                 "exports": "named",
                 "sourcemap": true,
                 "format": "esm",
-                "file": "dist/scheduler/timeout.js"
+                "file": "dist/scheduler/timeoutAsync.js"
             }
         ],
         "plugins": [

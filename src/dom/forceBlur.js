@@ -1,6 +1,6 @@
 /* global document */
 
-const timeout = function (ms) {
+const timeoutAsync = function (ms) {
     return new Promise((resolve) => { setTimeout(resolve, ms); });
 };
 
@@ -12,7 +12,7 @@ const forceBlur = async function () {
 
     document.body.append(input);
     input.focus();
-    await timeout(0);
+    await timeoutAsync(0);
     document.body.remove(input);
 };
 

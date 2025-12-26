@@ -22,9 +22,9 @@
 
             await occasionallyAsync(
                 async (incidentNumber) => {
-                    const timeout = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+                    const timeoutAsync = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
                     const random = Math.floor(Math.random() * 1000);
-                    await timeout(random);
+                    await timeoutAsync(random);
                     console.log('Async - Hello, world!', i, incidentNumber);
                 },
                 {

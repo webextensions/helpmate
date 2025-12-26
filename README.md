@@ -66,7 +66,7 @@ import { misc } from 'helpmate/dist/misc/index.js';
 
 import { occasionally } from 'helpmate/dist/scheduler/occasionally.js';
 import { retryNTimesWithDelay } from 'helpmate/dist/scheduler/retryNTimesWithDelay.js';
-import { timeout } from 'helpmate/dist/scheduler/timeout.js';
+import { timeoutAsync } from 'helpmate/dist/scheduler/timeoutAsync.js';
 import { scheduler } from 'helpmate/dist/scheduler/index.js';
 
 import { isValidUuidV4 } from 'helpmate/dist/uuid/isValidUuidV4.js';
@@ -126,7 +126,7 @@ const { misc } = require('helpmate/dist/misc/index.cjs');
 
 const { occasionally } = require('helpmate/dist/scheduler/occasionally.cjs');
 const { retryNTimesWithDelay } = require('helpmate/dist/scheduler/retryNTimesWithDelay.cjs');
-const { timeout } = require('helpmate/dist/scheduler/timeout.cjs');
+const { timeoutAsync } = require('helpmate/dist/scheduler/timeoutAsync.cjs');
 const { scheduler } = require('helpmate/dist/scheduler/index.cjs');
 
 const { isValidUuidV4 } = require('helpmate/dist/uuid/isValidUuidV4.cjs');
@@ -187,7 +187,7 @@ src/misc/index.js
 
 src/scheduler/occasionally.js
 src/scheduler/retryNTimesWithDelay.js
-src/scheduler/timeout.js
+src/scheduler/timeoutAsync.js
 src/scheduler/index.js
 
 src/uuid/isValidUuidV4.js
